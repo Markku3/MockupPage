@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mockup Foundation Order</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    section {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+label input {
+  margin-left: 8px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+   
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <img src="./Images/Nimetön malli.png" alt="Cosmetic Products" id="logo">
+    <hr>
+    <form action="submission.html" method="POST">
+      <h1>Request for Becoming our Makeup Line's Tester</h1>
+
+      <section>
+        <label for="name">Write your whole name:</label>
+        <input type="text" name="name" id="name">
+      </section>
+      <hr>
+
+      <section>
+        <label for="age">How Old are You?:</label> 
+        <input type="number" name="age" id="age">
+      </section>
+      <hr>
+
+      <section>
+        <label for="fairness">How Fair are You:</label>
+        <span>Fair to Extra Dark</span>
+        <input type="range" name="fairness" id="fairness" value="3" min="1" max="5">
+        <span>This side is Fair</span>
+      </section>
+      <hr>
+
+      <section>
+        <span>Skin Type:</span>
+        <br>
+        <br>
+        <input type="checkbox" name="type" id="dry" value="dry">
+        <label for="dry">Dry</label>
+        <input type="checkbox" name="type" id="flaky" value="flaky">
+        <label for="flaky">Flaky</label>
+        <input type="checkbox" name="type" id="normal" value="normal">
+        <label for="normal">Normal</label>
+        <input type="checkbox" name="type" id="oily" value="oily">
+        <label for="oily">Oily</label>
+        <input type="checkbox" name="type" id="mixed" value="mixed">
+        <label for="mixed">Mixed</label>
+      </section>
+      <hr>
+
+      <section>
+        <span>Allergic to Scents?:</span>
+        <br>
+        <input type="radio" name="allergic" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="allergic" id="no" value="no">
+        <label for="no">No</label>
+      </section>
+      <hr>
+
+      <section>
+        <label for="continent">What is Your Continent?:</label>
+        <select name="continent" id="continent">
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="europe">Europe</option>
+          <option value="else">Something Else</option>
+        </select>
+      </section>
+      <hr>
+
+      <section>
+        <label for="city">What City?:</label>
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+        <option value="Tokyo">Tokyo</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Beijing">Beijing</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Shenzhen">Shenzhen</option>
+        <option value="Osaka">Osaka</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Moscow">Moscow</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Tianjin">Tianjin</option>
+        <option value="Lima">Lima</option>
+        <option value="Bangkok">Bangkok</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="Moscow">Moscow</option>
+        <option value="Something Else">Something Else</option>
+        </datalist>
+      </section>
+      <hr>
+
+      <section>
+        <label for="extra">Why We Should Choose You?:</label>
+        <br>
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+      <hr>
+
+      <section>
+        <input type="submit" value="Submit">
+      </section>
+
+    </form>
+  </section>
+</body>
+
+</html>
